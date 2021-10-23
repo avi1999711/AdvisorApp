@@ -11,7 +11,7 @@ app.secret_key = '123456'
 app.config['SESSION_TYPE'] = 'auth0'
 jwt = JWTManager(app)
 
-client = MongoClient("mongodb+srv://Avish:ezwGcvJUm7hK1IWK@cluster0.u6fdh.mongodb.net/Products?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://<username>:<password>@cluster0.u6fdh.mongodb.net/Products?retryWrites=true&w=majority")
 myDatabase = client['nurturelabs']
 
 @app.route("/")
